@@ -24,14 +24,14 @@ One may wish to download and get GEMSTAT to work using Xin's example data files 
 --------------------------------------------------------------------------
 INSTALLATION OF C/C++ SOURCE CODE
 
-In the MIBBS directory on your machine execute the following commands:
+In the MIBBS directory on your machine execute the following commands to 'build' the project's binaries and execuatables:
 
 ./configure
 make
 
 The 'configure' program should have created Makefiles in each directory that contains C/C++ source code.  Calling 'make' in the MIBBS directory will 'recursively make' all the object files and executalbes for your particular platform.  Hence, if make successfully compiles all the source code, one is done with installation, otherwise try to fix the installation errors (or contact me).  (Note, sometimes in the GNU automake system, a user additionally uses 'make install', which is not necessary here).
 
-The 'configure' script may fail to 'link' or find the gsl library on your machine, this means you have to pass the configure script the location of gsl on your machine.  The location of gsl can be found from the command line by executing : gsl-config --prefix.  Let the path returned by gsl-config --prefix = ./configure LDFLAGS=/usr/local/lib, then one must enter the following commands from the MIBBS directory:
+The 'configure' script may fail to 'link' or find the gsl library on your machine, this means you have to pass the configure script the location of gsl on your machine.  The location of gsl can be found from the command line by executing : gsl-config --prefix.  Let the path returned by gsl-config --prefix = /usr/local/lib, then you must enter the following build commands from the MIBBS directory:
 
 ./configure LDFLAGS=-L/usr/local/lib
 make
