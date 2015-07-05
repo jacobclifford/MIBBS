@@ -49,8 +49,7 @@ ExprPredictor.h:514:270: error: expected ‘,’ or ‘...’ before numeric con
 If this compilation error occurs ( occurring during the 'make' step of the build process) execute the following 'Stream EDit' from the program sed:
 
 
-
-sed -i  's/_B/B/g' *
+sed -i  's/_B/B/g' ./*/ExprPredictor.*
 
 The will 's'ubstitute all occurences of _B with B, this will occur 'g'lobally (i.e. g meaning in all subdirectories of MIBBS, and just the subdirectories of MIBBS), and * meaning all files in these subdirectories.  Then rerun 'make'.
 --------------------------------------------------------------------------
