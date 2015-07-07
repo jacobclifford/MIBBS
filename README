@@ -24,7 +24,7 @@ One may wish to download and get GEMSTAT to work using Xin's example data files 
 --------------------------------------------------------------------------
 INSTALLATION OF C/C++ SOURCE CODE
 
-In the MIBBS directory on your machine execute the following commands to 'build' the project's binaries and execuatables:
+In the MIBBS directory on your machine execute the following build commands to 'build' the project's binaries (like the execuatables):
 
 ./configure
 make
@@ -46,12 +46,12 @@ ExprPredictor.h:514:270: error: expected ‘,’ or ‘...’ before numeric con
                                                                                                                                                                                                                                                                               ^
 
 
-If this compilation error occurs ( occurring during the 'make' step of the build process) execute the following 'Stream EDit' from the program sed:
+If this compilation error occurs ( occurring during the 'make' step of the build process) execute the following 'Stream EDit' from the program sed in the MIBBS directory:
 
 
 sed -i  's/_B/B/g' ./*/ExprPredictor.*
 
-The will 's'ubstitute all occurences of _B with B, this will occur 'g'lobally (i.e. the g flag replaces all occurences of the pattern in a given line), and * meaning all subdirectories and acts as a wildcard for 'cpp' and 'h' file name extensions.  Then rerun 'make'.
+The will 's'ubstitute all occurences of _B with B, this will occur 'g'lobally (i.e. the g flag replaces all occurences of the pattern in a given line), and * meaning all subdirectories and acts as a wildcard for file name extensions of the ExprPredictor files (cpp and h files).  Then rerun 'make'.
 --------------------------------------------------------------------------
 DIFFERENCE BETWEEN GEMSTAT AND MIBBS 
 
