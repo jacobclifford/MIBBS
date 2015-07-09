@@ -13,7 +13,7 @@ RUNNING THE BASH SCRIPT 'masterscript.sh'
 
 To run the masterscript.sh on a PC using linux you must change masterscript.sh's beginning portion that contains the bash variables of the directories to the correct path of the folder 'MIBBS' on your machine.  
 
-The C/C++ programs called within materscript.sh are an extension of Saurabh Sinha's lab's GEMSTAT (in particular Xin He's code), (with minor merges from the program STAP from S.Zhong's lab), both are programs for 'thermodynamic modeling'.  A number of dependency programs/libraries are needed, such as GNU Scientific Library (GSL), matlab, weblogo (which requires biopython), latex.  To run GEMSTAT see the installation instructions found in the tar.gz file at:
+The C/C++ programs called within materscript.sh are an extension of Saurabh Sinha's lab's GEMSTAT (in particular Xin He's code), (with minor merges from the program STAP from S.Zhong's lab, see: http://systemsbio.ucsd.edu/STAP/)), both are programs for 'thermodynamic modeling'.  A number of dependency programs/libraries are needed, such as GNU Scientific Library (GSL), matlab, weblogo (which requires biopython), latex.  To run GEMSTAT see the installation instructions found in the tar.gz file at:
 http://veda.cs.uiuc.edu/Seq2Expr/
 where Xin's README for GEMSTAT is pasted at the end of this README for convenience, where the explanation of the input files and parameters and classes of the C/C++ programs are explained.  All comments from my code have been stripped due to nonstandard formatting; albeit, due to Xin's variable's names being suggestive of their purpose, the code can still be human readable; if one wants the unstripped code please send a request to me.
 
